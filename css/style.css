@@ -1,15 +1,35 @@
+@media screen and (max-width :900px){}
+
 *{
   margin: 0;
   padding: 0;
 }
+
+
+
+/* navbar */
 .navbar{
   display: flex;
-}
-nav ul{
-  padding: 15px;
   background-color: #333;
-  justify-content: center;
+  padding: 15px;
   
+}
+
+.navbar nav{
+  padding: 0;
+  align-items: center;
+  margin-left: 40%;
+}
+
+.navbar nav ul li{
+  list-style-type: none;
+  float: left;
+}
+
+.navbar nav ul li a{
+  padding: 20px 15px 0 0;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* banner */
@@ -71,12 +91,15 @@ nav ul{
 .grid-container{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 0 150px;
 }
 
 .grid-item{
   position: relative;
   text-align: center;
-  border: 1px solid #333;
+  background-color: #000;
+  
 }
 
 .item1{
@@ -85,8 +108,8 @@ nav ul{
 }
 
 .item2{
-  grid-column-start: 4;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
 }
