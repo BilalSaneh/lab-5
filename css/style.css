@@ -1,4 +1,9 @@
-@media screen and (max-width :900px){}
+ @media screen and (max-width:900px){
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+  }
+} 
 
 *{
   margin: 0;
@@ -12,13 +17,14 @@
   display: flex;
   background-color: #333;
   padding: 15px;
+  width: 100vw;
   
 }
 
 .navbar nav{
   padding: 0;
   align-items: center;
-  margin-left: 40%;
+  margin-left: 50vw;
 }
 
 .navbar nav ul li{
@@ -92,7 +98,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin: 0 150px;
+  margin: 0 80px;
 }
 
 .grid-item{
@@ -105,6 +111,7 @@
 .item1{
   grid-column-start: 1;
   grid-column-end: 3;
+  grid-area: 'item1';
 }
 
 .item2{
@@ -112,11 +119,24 @@
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
+  grid-area: 'item2';
+}
+
+.item3{
+  grid-area: 'item3';    
+}
+
+.item4{
+  grid-area: 'item4';    
 }
 .item5{
   grid-column-start: 1;
   grid-column-end: 3;
-  
+  grid-area: 'item5';
+}
+
+.item6{
+  grid-area: 'item6';
 }
 
 
